@@ -14,11 +14,6 @@ public:
     ~DatabaseManager();
 
     bool connectDatabase();
-    bool createTable();
-    bool addEnseignant(int matricule, const QString &nom, const QString &prenom, int tauxHoraire);
-    bool updateEnseignant(int matricule, const QString &nom, const QString &prenom, int tauxHoraire);
-    bool deleteEnseignant(int matricule);
-
     // Getter pour la connexion à la base de données
     QSqlDatabase& getConnection();
 

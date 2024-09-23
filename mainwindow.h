@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "database_manager.h"
+#include "enseignant_manager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,6 +25,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     DatabaseManager dbManager; // Assurez-vous que dbManager est déclaré ici
+    EnseignantManager enseignantManager;
+    MatiereManager matiereManager;
 };
 
 #endif // MAINWINDOW_H
